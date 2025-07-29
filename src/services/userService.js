@@ -1,21 +1,21 @@
 import Client from './api'
 
-// Fetch the user's profile data
-export const getProfile = async () => {
+// Get logged-in user's profile
+export const GetMyProfile = async () => {
     try {
-        const response = await Client.get('/profile/user-profile')
-        return response.data
+        const res = await Client.get('/profile/user-profile')
+        return res.data
     } catch (error) {
-        console.error('Error fetching profile:', error)
+        console.error('Error fetching your profile:', error)
         throw error
     }
 }
 
-// Update the user's profile picture
-export const UpdateProfilePicture = async (picture) => {
+// Update user's profile picture
+export const UpdateProfilePicture = async (pictureUrl) => {
     try {
-        const response = await Client.put('/profile/update-picture', { picture })
-        return response.data
+        const res = await Client.put('/profile/update-picture', { picture: pictureUrl })
+        return res.data
     } catch (error) {
         console.error('Error updating profile picture:', error)
         throw error
