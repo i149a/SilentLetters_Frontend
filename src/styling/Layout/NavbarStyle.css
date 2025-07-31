@@ -1,0 +1,65 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff8f5;
+  border-bottom: 1px solid #e0d6d1;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px; /* Adjust as needed */
+  width: auto;
+}
+
+/* Right-aligned group */
+.nav-right-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #7a6a65;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #5e3023;
+}
+
+/* Sign Out Button - Filled version */
+.signout-button {
+  background-color: #5e3023;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.signout-button:hover {
+  background-color: #4a251a;
+}
