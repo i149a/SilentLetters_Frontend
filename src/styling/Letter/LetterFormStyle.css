@@ -1,0 +1,222 @@
+/* Letter Form Container */
+.letter-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff8f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #e0d6d1;
+  text-align: center;
+}
+
+.form-title {
+  color: #5e3023;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form Elements */
+.letter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Grouped Fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+}
+
+.form-label {
+  color: #5e3023;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Input and Textarea */
+.form-input,
+.form-textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0d6d1;
+  border-radius: 8px;
+  background-color: #fffdfb;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #c7a59a;
+  box-shadow: 0 0 0 3px rgba(199, 165, 154, 0.15);
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Checkbox Options (Make Public / Anonymous) */
+.visibility-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #5e3023;
+  cursor: pointer;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  accent-color: #9c6b5d;
+  cursor: pointer;
+}
+
+/* Tags Section */
+.tag-heading {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  color: #5e3023;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.centered-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+  justify-content: flex-start;
+}
+
+.tag-button {
+  padding: 0.5rem 1rem;
+  background-color: #f0e6e0;
+  border-radius: 16px;
+  color: #5e3023;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  margin: 0.2rem 0;
+}
+
+.tag-button:hover {
+  background-color: #e0d6d1;
+}
+
+.tag-selected {
+  background-color: #9c6b5d;
+  color: white;
+}
+
+.no-tags {
+  color: #7a6a65;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Action Buttons */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Submit and Cancel - same base style */
+.submit-button,
+.cancel-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+/* Submit - filled style */
+.submit-button {
+  background-color: #9c6b5d;
+  color: white;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #7d564a;
+}
+
+.submit-button:disabled {
+  background-color: #bcaaa4;
+  cursor: not-allowed;
+}
+
+/* Cancel - outlined style but same size */
+.cancel-button {
+  background-color: transparent;
+  color: #9c6b5d;
+  border: 2px solid #9c6b5d;
+}
+
+.cancel-button:hover {
+  background-color: #f4eae6;
+}
+
+/* Error Message */
+.form-error {
+  color: #d32f2f;
+  background-color: #fde8e8;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .letter-form-container {
+    padding: 1.5rem;
+    margin: 1.5rem;
+  }
+
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+  }
+
+  .visibility-options {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
