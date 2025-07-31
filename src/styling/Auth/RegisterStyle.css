@@ -1,0 +1,103 @@
+/* Base Styles */
+.register-container {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: #fff8f5;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.register-title {
+  color: #5e3023;
+  text-align: center;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* Form Elements */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.register-input {
+  padding: 14px 16px;
+  border: 1px solid #e0d6d1;
+  border-radius: 10px;
+  background: #fffdfb;
+  font-size: 0.95rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: #c7a59a;
+  box-shadow: 0 0 0 3px rgba(199, 165, 154, 0.15);
+}
+
+.register-input::placeholder {
+  color: #b8a69e;
+}
+
+/* Button */
+.register-button {
+  background: #9c6b5d;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.register-button:hover {
+  background: #7d564a;
+  transform: translateY(-1px);
+}
+
+/* Links */
+.register-links {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #7a6a65;
+}
+
+.register-link {
+  color: #9c6b5d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.register-link:hover {
+  color: #5e3023;
+  text-decoration: underline;
+}
+
+/* Error Message */
+.register-error {
+  color: #d32f2f;
+  background: #fde8e8;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Password Requirements */
+.password-hint {
+  font-size: 0.8rem;
+  color: #9c6b5d;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
