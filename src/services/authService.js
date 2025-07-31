@@ -39,9 +39,9 @@ export const UpdatePassword = async (data) => {
 }
 
 // Send password reset link or code
-export const ForgetPassword = async (email) => {
+export const ForgetPassword = async (data) => {
     try {
-        const res = await Client.post('/auth/forget-password')
+        const res = await Client.post('/auth/forget-password', data)
         return res.data
     } catch (error) {
         console.error('Error updating forgetten password:', error)
