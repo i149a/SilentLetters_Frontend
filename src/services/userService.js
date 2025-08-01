@@ -14,7 +14,7 @@ export const GetMyProfile = async () => {
 // Update user's profile picture
 export const UpdateProfilePicture = async (pictureUrl) => {
     try {
-        const res = await Client.put('/profile/update-picture', { picture: pictureUrl })
+        const res = await Client.put('/profile/update-picture', pictureUrl)
         return res.data
     } catch (error) {
         console.error('Error updating profile picture:', error)
