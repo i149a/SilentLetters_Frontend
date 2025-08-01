@@ -65,3 +65,14 @@ export const DeleteLetter = async (id) => {
         throw error
     }
 }
+
+// Get Letters By Tag
+export const GetLettersByTag = async (tagId) => {
+    try {
+        const res = await Client.get(`/letters/by-tag/${tagId}`);
+        return res.data;
+    } catch (error) {
+        console.error('Get Letters By Tag Error:', error);
+        throw error;
+    }
+}
