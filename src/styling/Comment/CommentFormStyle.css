@@ -1,0 +1,116 @@
+/* Comment Form Container */
+.comment-form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff8f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #e0d6d1;
+}
+
+.comment-title {
+  color: #5e3023;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form Elements */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+/* Textarea */
+.comment-textarea {
+  min-height: 120px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e0d6d1;
+  border-radius: 8px;
+  background-color: #fffdfb;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.comment-textarea:focus {
+  outline: none;
+  border-color: #c7a59a;
+  box-shadow: 0 0 0 3px rgba(199, 165, 154, 0.15);
+}
+
+/* Checkbox */
+.anonymous-checkbox-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.anonymous-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #5e3023;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.anonymous-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #9c6b5d;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.comment-submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.comment-submit-button {
+  padding: 0.7rem 1.8rem;
+  background-color: #9c6b5d;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.comment-submit-button:hover {
+  background-color: #7d564a;
+}
+
+.comment-submit-button:disabled {
+  background-color: #bcaaa4;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .comment-form-container {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    max-width: calc(100% - 3rem);
+  }
+  
+  .comment-title {
+    font-size: 1.3rem;
+  }
+  
+  .comment-textarea {
+    min-height: 100px;
+  }
+}
