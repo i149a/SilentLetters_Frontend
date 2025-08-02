@@ -6,7 +6,7 @@ A web application that gives users a space to express the words they never said,
 
 
 **🔗 Browse it live:**  
-Go Live: [Deployed Link of Silent Letters Frontend](responsible-care-israa.surge.sh)
+Go Live: [Deployed Link of Silent Letters Frontend](https://frabjous-figolla-de2942.netlify.app/login)
 
 **✅ Trello Board**  
 Track the development progress and task assignments via Trello board:  
@@ -22,15 +22,15 @@ Track the development progress and task assignments via Trello board:
 
 ## 🧪 Screenshots from Browser  
 ### Home Page 
-![Home Page]()
+![Home Page](images/Screenshots/Silent%20Letters%20Home%20Page.png)
 📌 *Home page of Silent Letters displays a feed of public letters with tags, and comment option for registered users.*
 
 ### Sign In Page
-![Sign In Page]()  
+![Sign In Page](images/Screenshots/Silent%20Letters%20Login.png)  
 📌 *Sign in page where existing users can log into their accounts.*
 
 ### Profile Page
-![Profile Page]()  
+![Profile Page](images/Screenshots/Silent%20Letters%20Profile.png)  
 📌 *Shows the user's own letters with options to operate the letters.*
 
 ---
